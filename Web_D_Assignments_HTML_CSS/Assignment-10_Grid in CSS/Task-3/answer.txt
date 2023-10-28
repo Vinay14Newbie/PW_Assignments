@@ -1,0 +1,6 @@
+Task-3  Explain the use of grid-auto-row and grid-auto-column using code examples.
+
+
+grid-auto-rows & grid-auto-columns
+This is property is used to set the size of the width & height in column & row respectively.
+It can be useful when, when you have not determined the size of the row OR column using this you can set the their size easily. 

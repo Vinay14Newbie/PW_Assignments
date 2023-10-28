@@ -1,0 +1,11 @@
+Q2  Explain the difference between Absolute and Relative positioning.
+
+
+1)  Absolute positioning:
+-Absolute positioning takes an element out of the normal flow and positions it relative to a specified ancestor or the viewport, without affecting the layout of other elements.
+-You can use properties like 'top', 'right', 'bottom' and 'left' to specify the exact position of the element.
+
+
+2)  Relative positioning:
+-It doesn't affect the siblings element while moving the other positions.
+-Relative positioning used in combination with prooperties like top, right, bottom and left to make fine adjustents to the position we required.

@@ -1,0 +1,46 @@
+<!-- Q3 Create a CSS file and link it to the provided HTML file below, use any of the combinator class selectors to
+style the navigation menu as follows - -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+        /* removing bullets & underline form menu */
+        ul li{
+            list-style: none;
+        }
+        ul li>a{
+            text-decoration: none;
+        }
+
+        /* making block to inline */
+        ul>li{
+            display: inline;
+        }
+
+        /* giving margin to list */
+        li+li{   /* by doing this it will select all the li */
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Your content here -->
+    </main>
+</body>
+</html>

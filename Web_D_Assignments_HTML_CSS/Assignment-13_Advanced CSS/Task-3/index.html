@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        /* making loader at center */
+        .loader{
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgb(223, 222, 222);
+            border-top: 3px solid blue;  /*by doing this one side of box will be blue & we can rotate the box to see the loading effect */
+            border-radius: 50%; 
+
+            /* just briging it at the center */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            /* @keyframes duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+            animation: 2s linear 0s infinite normal both running spin;
+        }
+
+
+        /* making it spins */
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

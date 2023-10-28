@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        /* Example of justify-items */
+        .container{
+            width: 75%;
+            height: 100vh;
+            border: 1px solid red;
+            display: grid;
+            gap: 20px;
+
+            /* justify-items : by doing this all the items will come at the end  */
+            justify-items: end;
+        }
+
+
+        /* Example of justify-self */
+        .box5{
+            /* justify-self : by doing this only box5 will come at the center */
+            justify-self: center;
+        }
+
+
+        /* boxes */
+        .box{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 35px 10px 10px 10px;
+        }
+
+        /* channgin all boxes color by odd-even order */
+        .box:nth-child(even){
+            background-color: rgb(35, 34, 34);
+            color: white;
+        }
+        .box:nth-child(odd){
+            background-color: rgb(188, 195, 178);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+    </div>
+</body>
+</html>

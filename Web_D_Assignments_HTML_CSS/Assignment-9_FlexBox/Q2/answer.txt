@@ -1,0 +1,24 @@
+Q2 Explain the role  ot the following key properties in the Flexbox layout model
+-justify-content
+-align-items
+-gap
+-flex-direction
+-flex-wrap
+
+
+-justify-content:
+justify-content sets the spaces between the elements in main axis
+it also sets the alignment of the elements
+
+-align-items
+align-items is just opposite of justify-content it works in opposite direction to the main axis.
+it also sets the the alignment of the elements 
+
+-gap
+gap is flex property which sets the gap between the elements with respect to row & columns.
+
+-flex-direction
+flex-direction defines how the flex items are placed in the row Or row-reverse, column Or column-reverse
+
+-flex-wrap
+flex-wrap decides the items should forced into single line or wrapped & placed on available spaces

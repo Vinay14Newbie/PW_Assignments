@@ -1,0 +1,21 @@
+Q1  List out features of HTML5
+
+
+1) Semantic Elements
+-<header>
+-<nav>
+-<article>
+-<main>
+-<section>
+-<footer> etc
+
+2) Audio and Video support
+-<img>
+-<video>
+
+3) <canvas>
+
+4) <svg>
+
+5) Security enhacements
+Ex. sandbox attribute for <iframe>

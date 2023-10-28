@@ -1,0 +1,20 @@
+ Q2  Build an HTML page with multiple paragraphs, each assigned a unique class name. Write CSS rules using
+class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and
+explain how you've named the classes,
+
+
+BEM (block, element, modifier)
+
+I'm taking the example of amazon forest for making webpage. With the class name 'amazon'.
+
+In this i've used two paragraph and one photo section.
+For each section i've used different class names by keeping amazon as a prefix name.
+Ex. amazon__river
+
+I've made an Image section of forest
+In that i've divided images in two parts:
+1) amazon trees
+2) amazon waterfall
+In total i've used all block, element, modifier naming to the classes
+
+And aside that a simple CSS styling till what I've learned

@@ -1,0 +1,10 @@
+Task-5  Explain the difference between justify-items and justify-self using code examples.
+
+
+justify-items
+The CSS justify-items property defines the default justify-self for all items of the box, giving them all a default way of justifying each box along the appropriate axis.
+This moves the items inside any container to the desired position.
+
+justify-self
+It is property use for setting the position of the item 'itself' without disturbing other items position.
+This will move the only selected item box in the conainer level;

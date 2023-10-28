@@ -1,0 +1,62 @@
+<!-- Task 5D
+Problem Statement
+Write code to position 5 equal-sized (50 X 50px) boxes A, B, C, D, and E as follows,
+1. box A 200px from the left, and 200px from the top of the viewport.
+2. box B -30px left, and -30px above from the center of box A.
+3. box C -30px right, and -30px above from the center of box A.
+4. box D -30px left, and -30px below from the center of box A.
+5. box E -30px right, and -30px below from the center of box A.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        /* Important Note: I've solve this Task in two approaches so take care of it */
+
+        /* Approach1: In this, first I take the parent div at the position of 200px from top & 200px from left by making it relative position, & then i gave the 'absolute' property to all the boxes & set the position of it relative to parent */
+
+        .parent{
+            position: relative;
+            top: 200px;
+            left: 200px;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            position: absolute;
+        }
+        .boxB{
+            left: -30px;
+            top: -30px;
+        }
+        .boxC{
+            left: 30px;
+            top: -30px;
+        }
+        .boxD{
+            left: -30px;
+            top: 30px;
+        }
+        .boxE{
+            left: 30px;   
+            top: 30px;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="parent">
+        <div class="box boxA">A</div>
+        <div class="box boxB">B</div>
+        <div class="box boxC">C</div>
+        <div class="box boxD">D</div>
+        <div class="box boxE">E</div>
+    </div>
+ </body>
+ </html>

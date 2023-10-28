@@ -1,0 +1,60 @@
+<!-- Write CSS to show numbers as shown in the figure, without altering the below html code. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taks-4</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        /* making two rows & columns of 6 */
+        .container{
+            width: 75%;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(2, 150px);
+        }
+
+        /* boxes */
+        .box{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            text-align: center;
+            padding: 55px 10px 10px 10px;
+        }
+
+        /* channgin all boxes color by odd-even order */
+        .box:nth-child(even){
+            background-color: rgb(35, 34, 34);
+            color: white;
+        }
+        .box:nth-child(odd){
+            background-color: rgb(188, 195, 178);
+        }
+
+        /* changing the order of box-1 & 2 to bring it at the end */
+        .box1, .box2{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+    </div>
+</body>
+</html>

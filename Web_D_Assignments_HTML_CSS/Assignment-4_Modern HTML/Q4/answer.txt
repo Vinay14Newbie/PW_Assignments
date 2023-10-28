@@ -1,0 +1,16 @@
+Q4  List any 3 ways which help us in improving the accessibility of HTML
+
+
+1) keyboard accessibility
+-In HTML there is attribute name "tabindex" is very useful for keyboard accessibility we can easily moves on eassential tab by this attribute
+Ex. tabindex="1"
+by this we can directyly jump on the specified tab on page
+
+2) Aria attribute
+-For blind peoples this attribute plays crucial role
+normally blind peoples uses screen reader for websites, for that time aria attribute is important it defines to the web page what information that Element is containing & screen reader can easily reads it loud for the person who are using it
+
+3) alt attribute
+-It normally used for <img> & <video> tags, when broswer fails to load any image or video instead of that image, broswer shows the text what we want to render on that place
+
+4) data-message

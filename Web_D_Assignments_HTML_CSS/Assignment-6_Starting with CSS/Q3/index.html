@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Q3  Develop an HTML form with various input elements. Use CSS to style the form, including setting background colors for input fields. Create a custom color palette for the form elements, and demonstrate how to apply opacity to one of the form sections -->
+
+
+
+    <h1>Registration Form</h1>
+    <form action="./pw.home">
+        <label for="name" class="student_name">Name</label>
+        <input type="text" id="name" name="username" placeholder="Enter Name">
+        <br>
+
+        <label for="password" class="student_password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password">
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="mail" placeholder="ex@12.mail">
+        <br>
+
+        <label for="range" class="energy">How much Energy in you?</label>
+        <input type="range" id="range" min="0" max="100" name="enery-present">
+        <br>
+
+        <label for="city">Your City</label>
+        <select name="city" id="city">
+            <option value="">Select any one</option>
+            <option value="chandrapur">Chandrapur</option>
+            <option value="amaravati">Amaravati</option>
+            <option value="nagpur">Nagpur</option>
+            <option value="gadachiroli">Gadachiroli</option>
+        </select>
+        <br>
+
+        <label for="">Gender: </label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender">
+        <br>
+
+        <label for="comment" class="comment">Why you want to Join us?</label> <br>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Reason only"></textarea>
+        <br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

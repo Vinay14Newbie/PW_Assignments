@@ -1,0 +1,50 @@
+/* custom color pallte */
+:root{
+    --bg1 : #e3d5ca;
+    --bg2 : #a8dadc;
+    --bg3 : #d6bab3;
+    --bg4 : orange;
+    --bg5 : #b881db;
+    --color1: #7e4108;
+    --color2: green;
+    --color3:  #3a0653d3;
+}
+
+
+*{
+    background-color: var(--bg1);
+}
+
+.student_name, .student_password{
+    color: var(--color1);
+}
+
+#name, #password{
+    background-color: var(--bg2);
+}
+#email{
+    background-color: var(--bg3);
+}
+#city{
+    background-color: var(--bg4);
+}
+
+textarea{
+    background-color: var(--bg5);
+}
+
+.energy{
+    color: var(--color2);
+}
+
+.comment{
+    color: var(--color3);
+}
+#comment{
+    /* this is how opacity demonstrated */
+    opacity: 0.5;
+}
+
+button{
+    background-color: var(--bg2);
+}

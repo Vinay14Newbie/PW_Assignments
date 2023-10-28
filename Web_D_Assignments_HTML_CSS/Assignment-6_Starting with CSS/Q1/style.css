@@ -1,0 +1,17 @@
+/* External CSS */
+
+/* element selector */
+h1, h2{
+    color: darkorange;
+}
+
+/* id selector */
+#pain_heading{
+    color: wheat;  /*heading color will not change cause it has less priority*/
+}
+
+/* class selector */
+/* Descendent combinator */
+.pain p{
+    text-decoration: underline;
+}

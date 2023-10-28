@@ -1,0 +1,57 @@
+/* B */
+/* Using the combinator selector, perform the following task */
+/* 1st: Use any of the CSS combinator selectors to target all the anchor tags and change the text color to red*/
+/* descendent combinator */
+li a{
+    color: red;
+}
+/* 2nd: Target only the first <h2> tag and change the text and background color using the combinator selector */
+/* used child combinator */
+nav > h2{
+    color: blue;
+}
+/* 3rd: _Also, select the first <p> tag and change the text color to red. */
+/* Adjacent sibling selector */
+div + p{
+    color: red;
+}
+
+
+/* C */
+/* Using the attribute selector, perform the following tas */
+/* 1st: target the anchor tag with attribute "href" and change color to red and remove the text underline */
+/* Existence Attribute Selector */
+[href]{
+    color: red;
+    text-decoration: none;
+}
+/* 2nd: Target the anchor tag with the attribute of class name active”, change the text color, and provide the text
+style properties with underlining */
+/* Space-separated Values Attribute Selector */
+[class~="active"]{
+    text-decoration: underline;
+}
+/* 3rd: Target the anchor tag with the attribute of the target whose value is _self” and change the background
+color. */
+/* Equality Attribute Selector */
+[target="_self"]{
+    background-color: lightgreen;
+}
+
+
+/* D */
+/* Using the Pseudo selectors, perform the following tass */
+/* 1st: Target the last <p> tag and add ...” i.e. three dots after its value */
+div+p::after{
+    content: "...";
+}
+/* 2nd: Target the list of bullet points and change the color of the bullet points without changing the list item's value */
+li::marker{
+    color: blueviolet;
+}
+/* 3rd: Among the three <p> tags target the 2nd <p> tag select the first letter of the second <p> tag, and change the color to red Also increase the font size to 30px */
+nav p:nth-of-type(2)::first-letter{
+    color: red;
+    font-size: 30px;
+}
+  

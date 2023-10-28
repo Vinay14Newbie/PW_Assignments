@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+    <style>
+        /* Ex. grid-auto-rows */
+        .container1{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            /* here is an example of grid-auto-rows by this the row are will 150px */
+            grid-auto-rows: 150px;
+        }
+
+        /* Ex. grid-auto-columns */
+        .container2{
+            display: grid;
+            grid-template-rows: repeat(3, 250px);
+
+            /* by doing this columns spacing will be 200px */
+            grid-auto-columns: 200px;
+        }
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            border: 1px solid red;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+    </div>
+    <hr>
+    <div class="container2">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+    </div>
+</body>
+</html>

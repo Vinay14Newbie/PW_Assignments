@@ -1,0 +1,58 @@
+<!-- Problem Statement
+Explain the z-index, with a code example. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5</title>
+    <style>
+        .parent{
+            position: relative;
+        }
+        .box{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .boxA{
+            top: 200px;
+            left: 200px;
+
+            /* assigning z-index property */
+            z-index: 1;
+        }
+        .boxB{
+            top: 170px;
+            left: 170px;
+            z-index: 2;
+        }
+        .boxC{
+            top: 170px;
+            left: 230px;
+        }
+        .boxD{
+            top: 230px;
+            left: 170px;
+        }
+        .boxE{
+            top: 230px;
+            left: 230px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box boxA">A</div>
+        <div class="box boxB">B</div>
+        <div class="box boxC">C</div>
+        <div class="box boxD">D</div>
+        <div class="box boxE">E</div>
+    </div>
+</body>
+</html>

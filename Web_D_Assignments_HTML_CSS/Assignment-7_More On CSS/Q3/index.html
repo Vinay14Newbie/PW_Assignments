@@ -1,0 +1,52 @@
+<!-- Q3  Create a navigation bar similar to question Q1 For each navigation item, use a different border style. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blueviolet;
+        }
+        .container a{
+            color: white;
+            font-size: large;
+        }
+        .container ul li{
+            display: inline-block;
+            padding: 10px;
+        }
+
+        /* border styling */
+        #home{
+            border: solid black;
+        }
+        #aboutus{
+            border: dotted yellow;
+        }
+        #contact{
+            border: 1rem solid;
+        }
+        #blog{
+            border: thick double yellowgreen;
+        }
+        #login{
+            border: 4mm ridge peachpuff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li id="home"><a href="#">Home</a></li>
+            <li id="aboutus"><a href="#">About Us</a></li>
+            <li id="contact"><a href="#">Contact</a></li>
+            <li id="blog"><a href="#">Blog</a></li>
+            <li id="login"><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

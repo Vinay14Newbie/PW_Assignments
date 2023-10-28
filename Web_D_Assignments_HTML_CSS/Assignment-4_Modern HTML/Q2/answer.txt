@@ -1,0 +1,28 @@
+Q2  What are HTML Entities? List out 5 commonly used HTML Entities.
+
+HTML Entities are special/reserved characters which is not normally found on keyboard 
+Japan is the first country who used HTML Entities first time 
+
+
+There are lots of HTML Entities present, here are some of them:
+
+1) &copy;
+-for the copyright symbol
+
+2) &reg;
+- for the registered symbol/trademark
+
+3) &amp;
+- for the ampersand
+
+4) &euro;
+- for euro sign
+
+5) &nbsp;
+- for non breaking space
+
+6) &lt;
+- for lower than sign
+
+7) &gt;
+- for greater than sign

@@ -1,0 +1,7 @@
+Task-4  Problem Statement
+You have to visit the PW Skills website (https://pwskills.com/) and have to hide the logo by using the developer tool. This should be done using the css and developer tool only, use of javascript is prohibited.
+
+
+--
+So to hide the logo i've used visibility:hidden property.
+But there is one more that is display:none but it totally remove the logo from the wepage but for this question I can use it.

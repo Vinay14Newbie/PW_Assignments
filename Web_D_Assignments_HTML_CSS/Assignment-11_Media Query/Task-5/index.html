@@ -1,0 +1,101 @@
+<!-- Task-5 Create the below given layout using the flexbox in css, which should adapt itself on mobile screen as per given below output. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-5</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        /* making whole container flex & some beutification */
+        .container{
+            width: 100%;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            border: 2px solid red;
+        }
+
+        /* just padding & aligning text */
+        .box{
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        /* setting up top content with respect respect to parent(container) */
+        .top{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        /* setting up middle boxes in normal view */
+        .mid_box{
+            width: 100%;
+            height: 100%;
+        }
+
+        /* setting up box1 & 4 */
+        .box1, .box4{
+            background-color: black;
+            color: white;
+            height: 100%;
+            width: 6%;
+        }
+
+        /* styling box2 & 3 and fixing their height as well */
+        .box2{
+            background-color: rgb(27, 201, 143);
+            color: white;
+            width: 100%;
+            height: 50%;
+        }
+        .box3{
+            background-color: coral;
+            color: white;
+            width: 100%;
+            height: 50%;
+        }
+
+
+        /* So here is your responsive ans */
+        @media (max-width:550px){
+            .container{
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .top{
+                flex-direction: column;
+                width: auto;
+                height: auto; 
+            }
+            .box1, .box4{
+                width: auto;
+                height: auto;
+            }
+            .box{
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="box box1">Box 1</div>
+            <div class="mid_box">
+                <div class="box box2">Box 2</div>
+                <div class="box box3">Box 3</div>
+            </div>
+        </div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+</html>

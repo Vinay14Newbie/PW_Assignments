@@ -1,0 +1,46 @@
+<!-- Create an image gallery with three images in a row. Use media queries to adjust the layout to two images in a row for screens smaller than 800px and one image in a row for screens smaller than 500px. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        .gallery{
+            width: 100%;
+            border: 2px solid red;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items:center;
+        }
+        img{
+            padding: 10px 0;
+            width: 300px;
+        }
+
+        /* so the first condition when screen-size less than 800px it shall show two images in column */
+        @media (max-width:800px){
+            .gallery{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* & the second condition respectively */
+        @media (max-width:500px){
+            .gallery{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="temp.jpg" alt="">
+        <img src="temp.jpg" alt="">
+        <img src="temp.jpg" alt="">
+    </div>
+</body>
+</html>

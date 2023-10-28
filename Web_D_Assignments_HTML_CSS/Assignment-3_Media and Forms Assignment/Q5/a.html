@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- a. Sign up form should have a first name, last name, email, password, confirm password, age, gender, and agree to terms and conditions fields at minimum (You can add any other if you like) -->
+
+    <h1>Sign up</h1>
+    <form action="./example.in">
+        <div>
+            <!-- name -->
+            <label for="first_name">First Name</label>
+            <input type="text" placeholder="Enter First Name" id="first_name" name="first_name">
+
+            <label for="last_name">Last Name</label>
+            <input type="text" placeholder="Enter Last Name" id="last_name" name="last_name">
+        </div>
+
+        <div>
+            <!-- mail -->
+            <label for="email">Email</label>
+            <input type="email" minlength="3" placeholder="Enter Your Email" id="email" name="email_id">
+        </div>
+
+        <div>
+            <!-- password -->
+            <label for="password">Enter Password</label>
+            <input type="password" placeholder="Enter Password" id="password" name="password">
+        </div>
+        <div>
+            <label for="confirm_pass">Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" id="confirm_pass" name="confirmed_pass">
+        </div>
+
+        <div>
+            <!-- age -->
+            <label for="age">Your Age</label>
+            <input type="number" min="0" max="150" placeholder="Your Age" id="age" name="user_age">
+        </div>
+
+        <div>
+            <!-- gender -->
+            <label for="gender">Gender : </label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other">
+        </div>
+
+        <div>
+            <!-- terms & condition -->
+            <label for="terms_conditions">Agree to Terms & Conditions?</label>
+            <input type="checkbox" id="terms_conditions" name="terms_conditions">
+        </div>
+
+        <div>
+            <button type="reset">RESET</button>
+            <button type="submit">SIGN UP</button>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: #F4F2FD;
+    min-width: 962px;
+    height: 427px;
+    display: flex;
+    gap: 32px;
+    padding: 32px 48px 32px 48px;
+    justify-content: center;
+}
+.box{
+    width: 262px;
+    height: 363px; 
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 10px 0px #00000040;
+    justify-content: space-evenly;
+}
+
+/* box1 & box2 */
+.card_detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+.card_detail__details{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.card_head{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+}
+.plan_details{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 8px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+}
+.prize{
+    padding: 0px 8px 0px 8px;
+    display: flex;
+    gap: 10px;
+}
+.frame1{
+    height: 40px;
+    padding: 4px 8px 4px 8px;
+}
+.frame2{
+    height: 16px;
+    padding: 0px 8px 0px 8px;
+}
+.frame1 p{
+    font-family: 'Nunito';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #202842;
+}
+.prize p{
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    columns: #202842;
+}
+.group{
+    display: flex;
+}
+img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+.group1_frame1, .group2_frame1, .group3_frame1, .group4_frame1{
+    width: 30px;
+    display: flex;
+    height: 28px;
+    padding: 5px 4px 3px 4px;
+    gap: 10px;
+}
+p{
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #202842;
+}
+.group1_frame2, .group2_frame2, .group3_frame2, .group4_frame2{
+    padding: 8px 8px 4px 4px;
+}
+.subscribe_button{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+button{
+    padding: 8px 24px 8px 24px;
+    border-radius: 50px;
+    display: flex;
+    gap: 10px;
+    background-color:#202842;
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+/* box2 */
+.section2{
+    background-color: #202842;
+    color: #FFFFFF;
+}
+#section2__button{
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+}
+.section2 p{
+    color: #FFFFFF;
+}

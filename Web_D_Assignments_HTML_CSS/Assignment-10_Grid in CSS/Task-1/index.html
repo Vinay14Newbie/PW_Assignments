@@ -1,0 +1,61 @@
+<!-- Task-1  Create an image gallery using a CSS grid -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap: 20px;
+        }
+        .top_left{
+            grid-column: 1/3;
+        }
+        .top_right{
+            grid-column: 3/4;
+        }
+        .left{
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+        .mid{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .bottom_mid{
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .right{
+            grid-row: 2/4;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            /* here i'm adding border for better vision */
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top_left"><img src="laboratory.jpg" alt="top_left" ></div>
+        <div class="top_right"><img src="laboratory_top_right.jpg" alt="top_right"></div>
+        <div class="left"><img src="laboratory_left.jpg" alt="left"></div>
+        <div class="mid"><img src="laboratory_mid.jpg" alt="mid"></div>
+        <div class="bottom_mid"><img src="bottom_mid.jpg" alt="bottom_mid"></div>
+        <div class="right"><img src="laboratory_right.jpg" alt="right"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!-- Task-2  Create a 3D cube using the transform property of CSS. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            perspective: 800px;  /* perspective property is useful to see 3d view */
+
+            /* bringing all content at center with the help of flex */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+
+            /* bringing all boxes together to place as 3d cube */
+            position: absolute;
+
+            background-color: lightblue;
+            border: 2px dotted red;
+
+            /* bringing content inside box at the center */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 2em;
+            font-weight: 600;
+
+            /* Opacity plays crucial role, due to this we can see which box present behind the current box by minimizing the opacity  */
+            opacity: 0.8;
+        }
+
+        /* making cube look like 3d */
+        .cube{
+            transform-style: preserve-3d;  /* this line tells to preserve the 3d transformation instead of 2d which is default behaviour */
+            transform: rotatex(-45deg) rotatey(35deg);
+        }
+
+
+        /* KIM: when talking about 'rotatex' imagine you're rotating vertically */
+        /* & in 'rotatey' you're rotating horzontally */
+        .front{
+            transform: translateZ(100px);
+        }
+        .back{
+            transform: rotatey(180deg) translateZ(100px);
+        }
+        .left{
+            transform: rotatey(-90deg) translateZ(100px);
+        }
+        .right{
+            transform: rotatey(90deg) translateZ(100px);
+        }
+        .bottom{
+            transform: rotatex(-90deg) translateZ(100px);
+        }
+        .top{
+            transform: rotatex(90deg) translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cube">
+            <div class="box front">Front</div>
+            <div class="box back">Back</div>
+            <div class="box right">Right</div>
+            <div class="box left">Left</div>
+            <div class="box top">Top</div>
+            <div class="box bottom">Bottom</div>
+        </div>
+    </div>
+</body>
+</html>

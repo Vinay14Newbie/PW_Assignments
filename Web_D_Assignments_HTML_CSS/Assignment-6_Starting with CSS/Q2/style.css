@@ -1,0 +1,30 @@
+.header__title--wikipedia{
+    color: red;
+}
+.header__logo{
+    height: 35px;
+    width: 60px;
+}
+.header__nav{
+    color: rgb(4, 4, 44);
+}
+.amazon__info{
+    color: purple;
+    background-color: rgba(245, 222, 179, 0.518);
+}
+.amazon__photo--trees{
+    height: 300px;
+    width: 240px;
+}
+.amazon__photo--waterfall{
+    height: 350px;
+    width: 270px;
+}
+h3{
+    color: darkorange;
+    background-color: rgb(220, 229, 220);
+}
+.amazon__biodiversity{
+    color: darkgreen;
+    background-color: rgb(240, 232, 232);
+}

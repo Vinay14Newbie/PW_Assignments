@@ -1,0 +1,6 @@
+Explain the purpose of using the var() function in css. Also you have created two buttons with id named primaryBtn and secondaryBtn which should be given background colors using the var() function. The color code for primaryColor is #00b7ff and secondaryColor is #6c757d.
+
+
+var() function is also known as CSS custom property.
+It is used to store the  CSS properties inside it for Reusuability, maintainability, consistency, accessibility, etc things.
+It is useful while making projects we can simply store the properties inside var() & reuse it. 

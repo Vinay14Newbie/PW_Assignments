@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal CSS it has more priority than external CSS and less than inline CSS */
+        #itachi_heading, #pain_heading{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Q1  Create a simple page with sone div tags and show different ways to add CSS as well as what happens when you target the same elements with inline, internal, and external CSS. Also, utilize comments in the project where requireds -->
+
+
+
+    <header>
+        <h1>Naruto Characters</h1>
+    </header>
+
+    <div class="characters">
+        <section class="itachi">
+            <h2 id="itachi_heading">Itachi Uchiha</h2>
+
+            <img src="../../itachi.jpg" alt="itachi img">
+
+            <p>Itachi Uchiha (うちは イタチ, Uchiha Itachi) is a character in the Naruto manga and anime series created by Masashi Kishimoto. Itachi is the older brother of Sasuke Uchiha, and is responsible for killing all the members of their clan, sparing only Sasuke. </p>
+        </section>
+
+        <section class="pain">
+            <!-- inline CSS -->
+            <!-- no matter what style you have been declared in internal or external CSS, inline CSS will be conducted cause it has highest priority -->
+            <h2 id="pain_heading" style="color: rgb(101, 25, 172);">Pain</h2>
+
+            <img src="../../pain.jpg" alt="pain img">
+
+            <p>Nagato (Japanese: 長門), known primarily under the alias of Pain (ペイン, Pein), is a fictional character in the manga and anime series Naruto created by Masashi Kishimoto.</p>
+        </section>
+    </div>
+</body>
+</html>

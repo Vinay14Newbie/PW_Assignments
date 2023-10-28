@@ -1,0 +1,6 @@
+Q5  Define favicon and give an illustrative example.
+
+
+favicon is just logo Or DP that we can see on the any website's tab, on the left side
+
+For example look at the code

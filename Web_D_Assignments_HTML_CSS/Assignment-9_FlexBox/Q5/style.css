@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 1469px;
+    height: 1143px;
+    padding: 0px 4px 43px 5px;
+}
+.left{
+    width: 764px;
+    height: 870px;
+    padding: 50px 50px 50px 100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+.home{
+    width: 1460px;
+    height: 1100px;
+    position: relative;
+    left: 5px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+.train{
+    display: flex;
+    justify-content: end;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 210px;
+    height: 81.11px;
+    display: flex;
+    justify-content: space-between;
+}
+#left_logo{
+    height: 81.11px;
+}
+#right_logo{
+    width: 81.11px;
+    height: 81.11px;
+}
+p{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #333333;
+}
+
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-content: space-between;
+}
+.menu_first{
+    height: 18px;
+    gap: 25.35px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_second{
+    display: flex;
+    width: 321.81px;
+    height: 38.28px;
+    gap: 20.28px;
+    justify-content: space-between;
+}
+.menu_second__group1, .menu_second__group2, .menu_second__group3{
+    padding: 10.14px 15.21px 10.14px 15.21px;
+    border: 1.01px solid #33333333;
+    border-radius: 5.07px;
+    border-radius: 5.07px;
+}
+.menu_second__group1{
+    background-color: #FB792B;
+}
+.menu_second__group1 p{
+    color: #FFFFFF;
+}
+
+
+.head_title{
+    height: 118.08px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.head_title #first{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    color:#333333;
+}
+.head_title #second{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+}
+.head_title #second #safety{
+    color: #01BB0A;
+}
+.head_title #second #security{
+    color: #FB792B;
+}
+.head_title #second #panctuality{
+    color: #213D77;
+}
+
+
+.sub_button{
+    display: flex;
+    justify-content: space-between;
+}
+.sub_button__first, .sub_button__second, .sub_button__third{
+    display: flex;
+    padding: 10.14px 15.21px 10.14px 15.21px;
+    border-radius: 5.07px;
+    border: 1.01px solid #33333380;
+    gap: 10.14px;
+    justify-content: center;
+    align-items: center;
+}
+.sub_button__first{
+    background-color: #213D77;
+}
+.sub_button__first p{
+    color: #FFFFFF;
+}
+.sub_button p{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+
+.search_train__first{
+    display: flex;
+    justify-content: space-around;
+}
+.search_train__first--left{
+    display: flex;
+}
+.search_train__first--left--first{
+    display: flex;
+    flex-direction: column;
+}
+.search_train__first--left--first #first{
+    display: flex;
+}
+.search_train__first--end--first #first{
+    display: flex;
+}
+.search_train__first--end{
+    display: flex;
+}
+.search_font{
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 31px;
+    color: #333333;
+}
+
+
+.search_train__second{
+    display: flex;
+    justify-content: space-around;
+}
+.search_train__first--left, .search_train__first--mid, .search_train__first--end{
+    display: flex;
+    gap: 20px;
+}
+.search_train__second--left, .search_train__second--mid, .search_train__second--end{
+    display: flex;
+}
+
+.last_button{
+    width: 618.47px;
+    height: 81.11px;
+    background-color: #01BB0A;
+    border-radius: 10.14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last_button p{
+    width: 210px;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 31px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search_train__first, .search_train__second{
+    height: 116.6px;
+    border: 1.01px solid #3333331A;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.search_train__first div, .search_train__second div{
+    margin: 1px;
+}
+
+#in_train, .search_train__first--mid, #out_train{
+    display: flex;
+    align-items: center;
+}
+
+
+#item{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+
+}
+
+
+.search_train--second--right,
+    .search_train--second--middle{
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 10px;
+
+}
+#balance_it img {
+    position: relative;
+    top: 5px;
+}
