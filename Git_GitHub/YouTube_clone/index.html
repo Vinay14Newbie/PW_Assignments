@@ -3,39 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
+    <title>YouTube_clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="output.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px; /* Width of the scrollbar */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: gray; /* Color of the scrollbar thumb */
+            border-radius: 6px; /* Rounded corners of the scrollbar thumb */
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #0f0f0f; /* Color of the scrollbar track */
+        }
+    </style>
 </head>
-<body class="ml-20px mr-20px text-[10px font-roboto font-sans bg-[#0f0f0f] text-white px-6">
+<body class="box-border ml-20px mr-20px font-sans bg-[#0f0f0f] text-white px-6 pt-3 overflow-hidden">
     <!-- nav is here -->
-    <nav class="flex justify-between">
-        <div class="flex">
-            <i class="fa-solid fa-bars"></i>
-            <div class="flex">
-                <i class="fa-brands fa-youtube text-red-500"></i>
-                <p>YouTube <sup>IN</sup></p>
+    <nav class="flex items-center justify-between bg-[#0f0f0f] sticky top-0 z-10 pb-2 pt-1">
+        <div class="flex items-center">
+            <i class="hover:cursor-pointer fa-solid fa-bars mr-6 text-2xl text-slate-300"></i>
+            <div class="flex items-center hover:cursor-pointer">
+                <i class="fa-brands fa-youtube text-red-500 text-2xl mr-1"></i>
+                <p class="tracking-tighter font-bold text-xl">YouTube <sup class="font-extralight text-sm">IN</sup></p>
             </div>
         </div>
-        <div class="flex">
-            <div class="">
-                <input class="border-2 border-slate-600" type="text" id="search" placeholder="Search">
-                <div class="inline-block">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+        <div class="flex items-center">
+            <input class="h-[40px] border-2 w-[550px] border-slate-800 pl-2 py-1.5 rounded-l-2xl text-slate-200 bg-[#0f0f0f] text-xl" type="text" id="search" placeholder="Search">
+            <div class="h-[40px] items-center flex bg-slate-800 rounded-r-2xl border-y-2 py-1.5 px-4 border-r-2 border-slate-700">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div>
+            <div class="hover:cursor-pointer ml-6 h-[35px] flex items-center rounded-full bg-slate-800 p-3 shadow-xl">
                 <i class="fa-solid fa-microphone"></i>
             </div>
         </div>
-        <div class="flex">
-            <div><i class="fa-solid fa-video"></i></div>
-            <div><i class="fa-solid fa-bell"></i></div>
-            <div class="bg-red-600 inline-block rounded-full px-2.5 py-1 text-white">V</div>
+        <div class="flex items-center">
+            <div><i class="hover:cursor-pointer hover:bg-slate-700 py-1 px-2 rounded-full fa-solid fa-video"></i></div>
+            <div><i class="hover:cursor-pointer hover:bg-slate-700 py-1 px-2 rounded-full fa-solid fa-bell mx-6"></i></div>
+            <div class="hover:cursor-pointer bg-red-600 flex h-8 rounded-full px-2.5 py-1 text-white">V</div>
         </div>
     </nav>
+    <!-- nav ends here -->
+
+
+    <!-- main is here -->
+    <main class="flex pt-2 pb-4">
+        <!-- left scrollbar -->
+        <section class="left min-w-[15%] h-[80vh] overflow-scroll overflow-x-hidden">
+            <div class="my-2 bg-gray-800 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px] gap-[12px]">
+                <i class="min-w-[35px] fa-solid fa-house font-semibold"></i>
+                <p>Home</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-compact-disc "></i>
+                <p>Shorts</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-money-check "></i>
+                <p>Subscriptions</p>
+            </div>
+            <div class="border-b-2 border-slate-700 my-6"></div>
+
+            <!-- you -->
+            <div class="my-2 flex items-center px-4 py-2 gap-x-[12px]">
+                <p class="font-bold text-lg">You</p>
+                <i class="font-extralight min-w-[35px] fa-solid fa-greater-than"></i>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-regular fa-user"></i>
+                <p>Your Channel</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-clock-rotate-left"></i>
+                <p>History</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-play"></i>
+                <p>Your Videos</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-regular fa-clock"></i>
+                <p>Watch Later</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-chevron-down"></i>
+                <p>Show More</p>
+            </div>
+            <div class="border-b-2 border-slate-700 my-6"></div>
+
+            <!-- explore -->
+            <div class="my-2 flex items-center px-4 py-2 gap-x-[12px]">
+                <p class="font-bold text-lg">Explore</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-fire"></i>
+                <p>Trending</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-bag-shopping"></i>
+                <p>Shopping</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-music"></i>
+                <p>Music</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-film"></i>
+                <p>Movies</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-server"></i>
+                <p>Live</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-gamepad"></i>
+                <p>Gaming</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-newspaper"></i>
+                <p>News</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-trophy"></i>
+                <p>Sports</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-lightbulb"></i>
+                <p>Learning</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-vest patches"></i>
+                <p>Fashion & Beuty</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-podcast"></i>
+                <p>Podcast</p>
+            </div>
+            <div class="border-b-2 border-slate-700 my-6"></div>
+
+            <!-- more from youtube -->
+            <div class="my-2 flex items-center px-4 py-2 gap-x-[12px]">
+                <p class="font-bold text-lg">More from YouTube</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-brands fa-youtube text-red-500 text-2xl "></i>
+                <p>YouTube Premium</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-circle-play"></i>
+                <p>YouTube Studio</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-circle-play"></i>                
+                <p>YouTube Music</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-brands fa-youtube text-red-500 text-2xl"></i>
+                <p>YouTube Kids</p>
+            </div>
+            <div class="border-b-2 border-slate-700 my-6"></div>
+
+            <!-- bottom -->
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-solid fa-gear"></i>                
+                <p>Settings</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-regular fa-flag"></i>                
+                <p>Report histor</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-regular fa-circle-question"></i>                
+                <p>Help</p>
+            </div>
+            <div class="my-2 flex items-center px-4 py-2 hover:bg-slate-800 hover:cursor-pointer rounded-lg gap-x-[12px]">
+                <i class="min-w-[35px] fa-regular fa-comment-dots"></i>                
+                <p>Feedback</p>
+            </div>
+            <div class="border-b-2 border-slate-700 my-6"></div>
+
+            <!-- footer -->
+            <footer>
+                <div class="w-[100%]">
+                    <p class="hover:cursor-pointer inline-block pr-2">About</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">Press</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">Copyright</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">Contact us</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">Creators</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">Advertise</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">Developers</p>
+                </div>
+                <div class="my-6">
+                    <p class="hover:cursor-pointer inline-block pr-2">Terms</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">Privacy</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">Policy & Safety</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">How YouTube works</p>
+                    <p class="hover:cursor-pointer inline-block pr-2">Test new features</p>
+                </div>
+                <div>
+                    <p class="cursor-pointer text-sm">&copy; 2023 Google LLC</p>
+                </div>
+            </footer>
+        </section>
+
+        <!-- right/main -->
+        <section class="right pl-8">
+            <!-- main nav -->
+            <nav class="flex pb-4">
+                <div class="px-4 py-2 bg-white text-black mr-3 rounded-lg font-semibold">All</div>
+                <div class="px-4 py-2 bg-gray-800 mr-3 text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-slate-600">Gaming</div>
+                <div class="px-4 py-2 bg-gray-800 mr-3 text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-slate-600">Music</div>
+                <div class="px-4 py-2 bg-gray-800 mr-3 text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-slate-600">Thrillers</div>
+                <div class="px-4 py-2 bg-gray-800 mr-3 text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-slate-600">Tamil Cinema</div>
+                <div class="px-4 py-2 bg-gray-800 mr-3 text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-slate-600">T-Series</div>
+                <div class="px-4 py-2 bg-gray-800 mr-3 text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-slate-600">Dramedy</div>
+                <div class="px-4 py-2 bg-gray-800 mr-3 text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-slate-600">Diwali</div>
+                <div class="px-4 py-2 bg-gray-800 mr-3 text-white rounded-lg font-semibold hover:cursor-pointer hover:bg-slate-600">Korean pop music</div>
+                <div class="flex items-center rounded-full bg-slate-800 justify-center px-4 py-2">               
+                    <i class="font-extralight fa-solid fa-greater-than"></i>
+                </div>
+            </nav>
+            <!-- main nav ends here -->
+
+            <!-- video/main section | starts here -->
+            <article class="h-[80vh] overflow-scroll overflow-x-hidden">
+                <div class="grid grid-rows-2 grid-cols-3 gap-x-6 gap-y-10 mt-">
+                    <!-- first -->
+                    <div class="hover:cursor-pointer">
+                        <img class="rounded-t-2xl" src="./assets/first.jpg" alt="casetoo">
+                        <div class="flex mt-2">
+                            <div class=""><img class="rounded-full w-[62px] h-[38px]" src="./assets/first_logo.jpg" alt=""></div>
+                            <div class="text-base ml-2 pr-8">
+                                <p class="text-lg font-semibold mb-1">Speed Hacker Vs My 1000 IQ in BGMI - (31 Kills) - BGMI Gameplay</p>
+                                <div class="flex items-center">
+                                    <p>casetoo</p>
+                                    <i class="fa-solid fa-check bg-gray-500 rounded-full text-black ml-2 text-[15px]"></i>
+                                </div>
+                                <p>100K views - 5 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second -->
+                    <div class="hover:cursor-pointer">
+                        <img class="rounded-t-2xl" src="./assets/second.jpg" alt="">
+                        <div class="flex mt-2">
+                            <div class=""><img class="rounded-full w-[62px] h-[38px]" src="./assets/second_logo.jpg" alt=""></div>
+                            <div class="text-base ml-2 pr-8">
+                                <p class="text-lg font-semibold mb-1">Aspirants Season 2 | Abhilash's Mock Interview | All Episodes Streming On...</p>
+                                <div class="flex items-center">
+                                    <p>The Viral Fever</p>
+                                    <i class="fa-solid fa-check bg-gray-500 rounded-full text-black ml-2 text-[15px]"></i>
+                                </div>
+                                <p>999K views - 5 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third -->
+                    <div class="hover:cursor-pointer">
+                        <img class="rounded-t-2xl" src="./assets/third.webp" alt="">
+                        <div class="flex mt-2">
+                            <div class=""><img class="rounded-full w-[69px] h-[38px]" src="./assets/third_logo.jpg" alt=""></div>
+                            <div class="text-base ml-2 pr-8">
+                                <p class="text-lg font-semibold mb-1">Day in the Life of an Indian Student Living in Japan | Indian in Japan</p>
+                                <div class="flex items-center">
+                                    <p>adi kun in japan</p>
+                                    <i class="fa-solid fa-check bg-gray-500 rounded-full text-black ml-2 text-[15px]"></i>
+                                </div>
+                                <p>66K views - 2 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fourth -->
+                    <div class="hover:cursor-pointer">
+                        <img class="rounded-t-2xl" src="./assets/fourth.webp" alt="">
+                        <div class="flex mt-2">
+                            <div class=""><img class="rounded-full w-[38px] h-[40px]" src="./assets/fourth_logo.jpg" alt=""></div>
+                            <div class="text-base ml-2 pr-8">
+                                <p class="text-lg font-semibold mb-1">CIGARETTE IN SOIL - 1 Year Time Lapse [8K]</p>
+                                <div class="flex items-center">
+                                    <p>Photo Owl Time Lapse</p>
+                                    <i class="fa-solid fa-check bg-gray-500 rounded-full text-black ml-2 text-[15px]"></i>
+                                </div>
+                                <p>10M views - 3 months ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fifth -->
+                    <div class="hover:cursor-pointer">
+                        <img class="rounded-t-2xl" src="./assets/fifth.webp" alt="">
+                        <div class="flex mt-2">
+                            <div class=""><img class="rounded-full w-[42px] h-[42px]" src="./assets/fifth_logo.jpg" alt=""></div>
+                            <div class="text-base ml-2 pr-8">
+                                <p class="text-lg font-semibold mb-1">I Built 100 wells In Africa</p>
+                                <div class="flex items-center">
+                                    <p>MrBeast</p>
+                                    <i class="fa-solid fa-check bg-gray-500 rounded-full text-black ml-2 text-[15px]"></i>
+                                </div>
+                                <p>103M views - 10 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- sixth -->
+                    <div class="hover:cursor-pointer">
+                        <img class="rounded-t-2xl" src="./assets/sixth.webp" alt="nature">
+                        <div class="flex mt-2">
+                            <div class=""><img class="rounded-full w-[52px] h-[42px]" src="./assets/sixth_logo.jpg" alt=""></div>
+                            <div class="text-base ml-2 pr-8">
+                                <p class="text-lg font-semibold mb-1">Our Planet | Frozen Worlds | FULL EPISODE | Netflix</p>
+                                <div class="flex items-center">
+                                    <p>adi kun in japan</p>
+                                    <i class="fa-solid fa-check bg-gray-500 rounded-full text-black ml-2 text-[15px]"></i>
+                                </div>
+                                <p>31M views - 3 years ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                 <!-- short-video | start here -->
+                <article class="mt-12">
+                    <div class="flex justify-between items-center px-2">
+                        <div class="flex items-center">
+                            <i class="text-2xl min-w-[35px] fa-solid fa-compact-disc "></i>
+                            <p class="text-2xl font-semibold">Shorts</p>
+                        </div>
+                        <div>
+                            <i class="text-2xl font-lighter fa-solid fa-xmark hover:cursor-pointer hover:bg-slate-600 px-2.5 py-1 rounded-full"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-5 gap-x-4 mt-8">
+                        <div class="hover:cursor-pointer">
+                            <img class="h-[460px] rounded-xl" src="./assets/short_1.webp" alt="">
+                            <p class="text-lg font-semibold mb-1 mt-4">INSANE Routine of a Scientist #studymotivation...</p>
+                            <p class="text-gray-300">3.2M views</p>
+                        </div>
+                        <div class="hover:cursor-pointer">
+                            <img class="h-[460px] rounded-xl" src="./assets/short_2.webp" alt="">
+                            <p class="text-lg font-semibold mb-1 mt-4">Older videos feels so different to me, this one was taken...</p>
+                            <p class="text-gray-300">6.3M views</p>
+                        </div>
+                        <div class="hover:cursor-pointer">
+                            <img class="h-[460px] rounded-xl" src="./assets/short_3.webp" alt="">
+                            <p class="text-lg font-semibold mb-1 mt-4">Remarkable Student Attitude Touches Judge caprio...</p>
+                            <p class="text-gray-300">18M views</p>
+                        </div>
+                        <div class="hover:cursor-pointer">
+                            <img class="h-[460px] rounded-xl" src="./assets/short_4.webp" alt="">
+                            <p class="text-lg font-semibold mb-1 mt-4">This mill processes thousands of #trees daily to...</p>
+                            <p class="text-gray-300">3.2M views</p>
+                        </div>
+                        <div class="hover:cursor-pointer">
+                            <img class="h-[460px] rounded-xl" src="./assets/short_5.webp" alt="">
+                            <p class="text-lg font-semibold mb-1 mt-4">Roadmap to Web Development | for students</p>
+                            <p class="text-gray-300">209K views</p>
+                        </div>
+                    </div>
+                </article>
+                <!-- short-video | ends here -->
+
+                <!-- border | end part -->
+                <div class="flex justify-center items-center mt-16">
+                    <div class="px-32 py-2 rounded-3xl flex items-center border-2 border-gray-600 hover:cursor-pointer hover:shadow-lg">
+                        <p class="font-semibold text-lg mr-3">Show more</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                </div>
+            </article>
+            <!-- video section ends here -->
+        </section>
+    </main>
 </body>
 </html>

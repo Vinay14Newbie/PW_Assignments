@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail_clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 12px; 
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(201, 198, 198);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: white; 
+        }
+    </style>
+</head>
+<body class="bg-[#e4e5e7] overflow-hidden">
+    <!-- navigation bar is here -->
+    <nav class="flex items-center justify-between py-2 px-6 ">
+        <div class="flex items-center gap-x-[68px]">
+            <div class="flex items-center">
+                <i class="fa-solid fa-bars mr-5 text-xl opacity-50 hover:bg-gray-300 p-2 rounded-full cursor-pointer"></i>
+                <img class="cursor-pointer" src="./assets/gmail_logo.png" alt="">
+            </div>
+            <div class="flex items-center bg-slate-300 py-3 px-3 rounded-full gap-x-[550px]">
+                <div class="flex items-center gap-x-4">
+                    <i class="fa-solid fa-magnifying-glass hover:bg-[#f0eded] p-2 rounded-full cursor-pointer"></i>
+                    <p class="opacity-80">Search mail</p>
+                </div>
+                <i class="fa-solid fa-bars-staggered hover:bg-[#f0eded] p-2 rounded-full cursor-pointer"></i>
+            </div>
+        </div>
+        <div class="flex items-center gap-x-4 text-xl">
+            <i class="fa-regular fa-circle-question opacity-70 hover:bg-[#cbc8c8] p-2 rounded-full cursor-pointer"></i>
+            <i class="fa-solid fa-gear opacity-70 hover:bg-[#cbc8c8] p-2 rounded-full cursor-pointer"></i>
+            <i class="fa-solid fa-table-cells opacity-70 hover:bg-[#cbc8c8] p-2 rounded-full cursor-pointer"></i>
+            <p class="bg-red-500 text-white px-3 py-1 hover:shadow-lg p-2 rounded-full cursor-pointer">V</p>
+        </div>
+    </nav>
+    <!-- navigation bar ends here -->
+
+
+    <!-- main section starts here -->
+    <main class="flex pt-1">
+        <!-- left section is here -->
+        <section class="max-w-[16%] text-[15px]">
+            <div class="flex">
+                <div class="flex bg-[#c2e7ff] items-center p-4 px-5 rounded-2xl gap-x-4 ml-2 hover:shadow-lg cursor-pointer">
+                    <i class="fa-solid fa-pencil"></i>
+                    <p class="font-semibold">Compose</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="flex items-center justify-between bg-[#c0d4f4] rounded-r-full pl-8 pr-2.5 py-1.5 hover:cursor-pointer">
+                    <div class="flex items-center gap-x-5 mr-24">
+                        <div class="w-[18px]"><i class="fa-solid fa-inbox"></i></div>
+                        <p class="font-semibold opacity-80">Inbox</p>
+                    </div>
+                    <p class="text-sm">99+</p>
+                </div>
+                <div class="flex items-center justify-between hover:bg-gray-300 hover:cursor-pointer rounded-r-full pl-8 pr-2.5 py-1.5">
+                    <div class="flex items-center gap-x-5 mr-20">
+                        <div class="w-[18px]"><i class=" fa-regular fa-star"></i></div>                       
+                        <p class="opacity-80">Starred</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between hover:bg-gray-300 hover:cursor-pointer rounded-r-full pl-8 pr-2.5 py-1.5">
+                    <div class="flex items-center gap-x-5 mr-20">
+                        <div class="w-[18px]"><i class=" fa-regular fa-clock"></i> </div>                      
+                        <p class="opacity-80">Snoozed</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between hover:bg-gray-300 hover:cursor-pointer rounded-r-full pl-8 pr-2.5 py-1.5">
+                    <div class="flex items-center gap-x-5 mr-20">
+                        <div class="w-[18px]"><i class=" fa-regular fa-paper-plane"></i></div>
+                        <p class="opacity-80">Sent</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between hover:bg-gray-300 hover:cursor-pointer rounded-r-full pl-8 pr-2.5 py-1.5">
+                    <div class="flex items-center gap-x-5 mr-20">
+                        <div class="w-[18px]"><i class=" fa-regular fa-note-sticky fa-rotate-180"></i></div>
+                        <p class="opacity-80">Drafts</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between hover:bg-gray-300 hover:cursor-pointer rounded-r-full pl-8 pr-2.5 py-1.5">
+                    <div class="flex items-center gap-x-5 mr-20">
+                        <div class="w-[18px]"><i class="text-[12px] fa-solid fa-greater-than fa-rotate-90"></i></div>
+                        <p class="opacity-80">More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center pl-6 pr-2.5 py-1.5 justify-between mt-6">
+                <p>Labels</p>
+                <i class="fa-solid fa-plus hover:cursor-pointer"></i>
+            </div>
+        </section>
+        <!-- left section ends here -->
+
+        <!-- middle section starts here -->
+        <section class="w-[80%] ml-4">
+            <header class="flex justify-between bg-white rounded-t-2xl py-1.5 pl-5 pr-12">
+                <div class="flex opacity-80 items-center"> 
+                    <div class="flex items-center gap-x-2">
+                        <i class="fa-regular fa-square  hover:bg-[#cbc8c8] rounded-sm py-2 px-1 cursor-pointer"></i>
+                        <i class="fa-solid fa-caret-down text-[10px] hover:bg-[#cbc8c8] rounded-sm py-2 px-1 cursor-pointer"></i>
+                    </div>
+                    <div class="mx-5">
+                        <i class="fa-solid fa-rotate-right hover:bg-[#cbc8c8] rounded-full p-2 cursor-pointer"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical hover:bg-[#cbc8c8] rounded-full py-2 px-3 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="flex gap-x-6 text-[12px] opacity-75">
+                    <div class="hover:bg-[#cbc8c8] rounded-sm py-2 px-1.5 cursor-pointer">1-50 of 100</div>
+                    <div class="flex items-center gap-x-6">
+                        <i class="fa-solid fa-less-than opacity-40"></i>
+                        <i class="fa-solid fa-less-than fa-rotate-180 hover:bg-[#cbc8c8] rounded-full py-2 px-2 cursor-pointer"></i>   
+                    </div>
+                </div>
+            </header>
+
+            <main class="h-[80vh] overflow-scroll overflow-x-hidden">
+                <!-- main header -->
+                <div class="flex text-[15px] bg-white">                  
+                    <div class="flex items-center cursor-pointer hover:bg-gray-300 w-[260px] px-2">
+                        <div class="flex items-center pl-3 py-2 gap-x-4 text-blue-800 border-b-4 border-b-blue-800 w-[100%] h-[100%]">
+                            <div class="w-[18px]"><i class="fa-solid fa-inbox"></i></div>
+                            <p>Primary</p>
+                        </div>
+                    </div>
+                    <div class="cursor-pointer hover:bg-gray-300 w-[260px]">
+                        <div class="flex items-center pl-3 py-2 gap-x-4">
+                            <div class="w-[18px]"><i class="fa-solid fa-tag"></i></div>
+                            <div>
+                                <div class="flex gap-4">
+                                    <p>Promotions</p>
+                                    <p class="flex items-center text-[12px] bg-green-600 text-white rounded-full px-1.5">1 new</p>
+                                </div>
+                                <div class="text-[12px] opacity-60">
+                                    Best of MSN (Start Unfold)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cursor-pointer hover:bg-gray-300 w-[260px]">
+                        <div class="flex items-center pl-3 py-2 gap-x-4">
+                            <div class="w-[18px]"><i class="fa-solid fa-user-group"></i></div>
+                            <div>
+                                <div class="flex gap-4">
+                                    <p>Social</p>
+                                    <p class="flex items-center text-[12px] bg-blue-600 text-white rounded-full px-1.5">3 new</p>
+                                </div>
+                                <div class="text-[12px] opacity-60">
+                                    Linkedln, Instagram
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- main -->
+                <div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-2 pl-5 pr-5 bg-[#f1efef]hover:shadow-lg cursor-pointer hover:scale-[1.020]">
+                            <div class="flex items-center text-[14px] gap-x-5">
+                                <p><i class="fa-regular fa-square opacity-40 hover:opacity-100"></i></p>
+                                <p><i class="fa-regular fa-star opacity-40 hover:opacity-100"></i></p>
+                                <p>PW Skills</p>
+                            </div>
+                            <div class="text-[14px]">
+                                Assignment Graded for course Full Stack Web Development
+                            </div>
+                            <div class="text-[12px] opacity-70">
+                                10:18AM
+                            </div>
+                        </div>
+                        <div class="w-[100%] border-2 border-b-gray-300 "></div>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <footer class="bg-[#ded9d9] text-[13px] text-gray-800">
+                    <div class="flex justify-between items-start py-6 px-4">
+                        <div>
+                            <div class="bg-white w-[200px] rounded-full">
+                                <div class="border-2 border-blue-600 w-[100px] h-[100%] rounded-full"></div>
+                            </div>
+                            <div class="mt-3">
+                                7.5 GB of 15 GB used
+                                <i class="fa-solid fa-arrow-up-right-from-square ml-3"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="hover:underline" href="#">Terms</a> -
+                            <a class="hover:underline" href="#">Privacy</a> -
+                            <a class="hover:underline" href="#">Program Policies</a>
+                        </div>
+                        <div class="flex flex-col items-end">
+                            <p>Last account activity: 2 decades ago</p>
+                            <a class="hover:underline" href="#">Details</a>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </section>
+        <!-- middle section ends here -->
+
+        <!-- right section is here -->
+        <section class="flex flex-col items-center pt-2 pl-2 sticky top-0">
+            <div class="flex flex-col items-center gap-y-6">
+                <p class="hover:bg-[#cbc8c8] rounded-full py-2 px-2 cursor-pointer"><img class="w-[17px] h-[20px]" src="./assets/calender_.png" alt=""></p>
+                <p class="hover:bg-[#cbc8c8] rounded-full py-2 px-1.5 cursor-pointer"><img class="w-[30px] h-[25px]" src="./assets/keep.png" alt=""></p>
+                <p class="hover:bg-[#cbc8c8] rounded-full py-2 px-2 cursor-pointer"><img class="w-[20px] h-[20px]" src="./assets/tasks.png" alt=""></p>
+                <p class="hover:bg-[#cbc8c8] rounded-full py-2 px-2 cursor-pointer"><img class="w-[20px] h-[20px]" src="./assets/contacts.png" alt=""></p>
+            </div>
+            <div class="mt-14 hover:bg-[#cbc8c8] rounded-full py-1.5 px-2 cursor-pointer">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </section>
+        <!-- right section ends here -->
+    </main>
+</body>
+</html>
