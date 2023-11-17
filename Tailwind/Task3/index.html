@@ -1,14 +1,83 @@
+<!-- Problem statement -
+Create a non-responsive dashboard using Tailwind CSS, where the dashboard should include a sidebar navigation menu and a main contain area. (Making it responsive is optional). Feel free to use any icons from any place, Your goal is to design a visually appealing and user-friendly dashboard interface that is not responsive. -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task-3</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="bg-red-300">Hello</div>
-    <p class="text-yellow-800 bg-green-200">Hey there</p>
-    <p class="text-red-700 bg-red-200">It's not</p>
+    <div class="h-[100vh] w-[100vw] flex">
+        <!-- left -->
+        <div class="md:w-[20%] bg-slate-800 h-[100%] md:block hidden">
+            <div class="flex justify-center py-5">
+                <h1 class="text-white text-3xl">Dashboard</h1>
+            </div>
+            <div class="grid gap-y-36">
+                <div class="text-[#bebebe] text-xl">
+                    <div class="flex items-center text-gray-100 bg-slate-700 py-2.5 pl-4 gap-x-1">
+                        <p class="w-[45px]"><i class="fa-solid fa-chart-pie"></i></p>
+                        <p>Dashboard</p>
+                    </div>
+                    <div class="flex items-center hover:bg-slate-700 py-2.5 pl-4 gap-x-1">
+                        <p class="w-[45px]"><i class="fa-solid fa-people-group"></i></p>
+                        <p>Team</p>
+                    </div>
+                    <div class="flex items-center hover:bg-slate-700 py-2.5 pl-4 gap-x-1">
+                        <p class="w-[45px]"><i class="fa-solid fa-folder"></i></p>
+                        <p>Projects</p>
+                    </div>
+                    <div class="flex items-center hover:bg-slate-700 py-2.5 pl-4 gap-x-1">
+                        <p class="w-[45px]"><i class="fa-solid fa-calendar-days"></i></p>
+                        <p>Calender</p>
+                    </div>
+                    <div class="flex items-center hover:bg-slate-700 py-2.5 pl-4 gap-x-1">
+                        <p class="w-[45px]"><i class="fa-solid fa-file"></i></p>
+                        <p>Documents</p>
+                    </div>
+                    <div class="flex items-center hover:bg-slate-700 py-2.5 pl-4 gap-x-1">
+                        <p class="w-[45px]"><i class="fa-solid fa-clipboard-check"></i></p>
+                        <p>Reports</p>
+                    </div>
+                </div>
+                <div class="text-[#bebebe] text-xl">
+                    <div class="flex items-center hover:bg-slate-700 py-2 pl-4 gap-x-1">
+                        <p>Your Teams</p>
+                    </div>
+                    <div class="flex items-center hover:bg-slate-700 py-2 pl-4 gap-x-1">
+                        <p class="w-[45px]"><i class="fa-solid fa-people-group"></i></p>
+                        <p>AC Skills</p>
+                    </div>
+                    <div class="flex items-center hover:bg-slate-700 py-2 pl-4 gap-x-1">
+                        <p class="w-[45px]"><i class="fa-solid fa-people-group"></i></p>
+                        <p>AC Labs</p>
+                    </div>
+                    <div class="flex items-center hover:bg-slate-700  py-2 pl-4 gap-x-1">
+                        <p class="w-[45px]"><i class="fa-solid fa-people-group"></i></p>
+                        <p>AC - ROI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right  -->
+        <div class="bg-[#dedcdc] md:w-[80%] w-[100%] p-4 text-xl">
+            <div class="flex justify-between bg-white shadow-md py-4 px-5">
+                <div class="flex gap-x-4">
+                    <p><i class="fa-solid fa-user"></i></p>
+                    <p>Profile</p>
+                </div>
+                <div class="flex gap-x-4">
+                    <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                    <p><i class="fa-solid fa-bell"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
