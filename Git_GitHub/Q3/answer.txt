@@ -1,0 +1,19 @@
+Q2  Explain what .gitignore is and why it’s important in version control
+
+
+In simple words '.gitignore' is a file were we can write file or folder name and ignore it during commiting or pushing it on github.
+
+
+Why it important?
+
+-Cleaner repository
+it kepts cleaner repository by avoiding unnecessary files or folders.
+
+-Reduce repository size
+by ignoring unwanted files it can reduce the size of the repository
+
+-Avoiding personal configuration
+developers may have personal file configuration so by using it we can ensure personal interfere
+
+-Security 
+by not pushing sensitive file we can secure our personal info.

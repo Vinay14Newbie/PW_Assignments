@@ -1,0 +1,28 @@
+Q5  Describe the process of contributing to any open-source project on GitHub in a step-by-step manner.
+
+
+1. Find a project
+
+2. Fork the repository:
+on the project's github page, click the 'fork' button to create your copy of the repository.
+
+3. Clone the repository
+clone the repo
+
+4. Create a branch
+create a new branch for the contribution
+
+5. Make changes
+implement the changes you want to bring, keep the contribution guidelines in the mind
+
+6. Commit changes
+stage your changes and commit it
+
+7. Push changes
+push on github repo
+
+8. Creat a pull request
+go to original repo on github and click "compare & pull request" to submit to your changes
+provide a clear description of your changes in th pull request
+
+9. Wait for review and feedback from other developers.

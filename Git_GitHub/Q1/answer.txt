@@ -1,3 +1,7 @@
-hey
-another code
-fg
+Q1   Explain what version control is and its importance in software development in simple way
+
+
+
+Version control is like a time machine for software. Imagine you're writing a story, and you want to try out different endings. Instead of making copies of your entire story for each change, version control lets you save different "snapshots" of your work over time. This way, you can go back to any point in the story and see how it looked at that moment.
+
+In software development, version control helps teams keep track of changes to their code. It allows multiple people to work on the same project without mess up things. Developers can make changes to the code, and if something goes wrong, they can easily go back to a previous version. It also helps in collaboration, as team members can see who made what changes and when.
