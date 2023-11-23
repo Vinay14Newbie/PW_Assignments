@@ -1,0 +1,9 @@
+Q4  Discuss the precedence and associativity of operators in JavaScript. Why is understanding these concepts important?
+
+
+Operator Precedence refers to the order in which operators are evaluated in an expression. Operators with higher precedence are evaluated first. For example, in the expression a + b * c, multiplication (*) has higher precedence than addition (+), so b * c is evaluated first.
+
+Operator Associativity, it defines the order in which operators are evaluated when they have the same precedence. For example, the addition operator (+) is left-associative, so in the expression a + b + c, the leftmost + is evaluated first.
+
+-
+Understanding these concepts is crucial because they determine the order of operations in complex expressions, ensuring that expressions are evaluated correctly. If you don't understand operator precedence and associativity, you might get unexpected results in your calculations.
