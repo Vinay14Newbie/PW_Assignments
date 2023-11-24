@@ -1,3 +1,6 @@
+// Q2. Describe the categorization of operators in JavaScript based on their functionality. Provide examples for each category.
+
+
 // Arithmetic operators
 // it is a mathematical operator
 let a = 5

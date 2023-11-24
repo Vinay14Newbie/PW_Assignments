@@ -1,3 +1,6 @@
+// Q3. Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each.
+
+
 // Unary operator
 // it's operate on single operand
 let num = 10
