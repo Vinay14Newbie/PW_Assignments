@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+/* setting up page */
 .container{
     background-color: #F4F2FD;
     min-width: 962px;
@@ -12,6 +13,8 @@
     padding: 32px 48px 32px 48px;
     justify-content: center;
 }
+
+/* adding some styling to all cards */
 .box{
     width: 262px;
     height: 363px; 
@@ -25,7 +28,7 @@
     justify-content: space-evenly;
 }
 
-/* box1 & box2 */
+/* card details for all cards */
 .card_detail{
     display: flex;
     flex-direction: column;
@@ -110,6 +113,8 @@ p{
 .group1_frame2, .group2_frame2, .group3_frame2, .group4_frame2{
     padding: 8px 8px 4px 4px;
 }
+
+/* subscribe button */
 .subscribe_button{
     display: flex;
     gap: 10px;
@@ -131,7 +136,7 @@ button{
     align-items: center;
 }
 
-/* box2 */
+/* second card */
 .section2{
     background-color: #202842;
     color: #FFFFFF;

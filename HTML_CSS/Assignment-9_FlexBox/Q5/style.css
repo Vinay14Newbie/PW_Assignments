@@ -3,19 +3,14 @@
     margin: 0;
 }
 
+/* settinup the page */
 .container{
     width: 1469px;
     height: 1143px;
     padding: 0px 4px 43px 5px;
 }
-.left{
-    width: 764px;
-    height: 870px;
-    padding: 50px 50px 50px 100px;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-}
+
+/* giving some properties whole to page */
 .home{
     width: 1460px;
     height: 1100px;
@@ -25,10 +20,25 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* setting left side of page */
+.left{
+    width: 764px;
+    height: 870px;
+    padding: 50px 50px 50px 100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* setting train image at right side */
 .train{
     display: flex;
     justify-content: end;
 }
+
+
+/* navigation bar of the page */
 .head{
     display: flex;
     justify-content: space-between;
@@ -54,7 +64,7 @@ p{
     color: #333333;
 }
 
-
+/* navs */
 .menu{
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +98,7 @@ p{
 }
 
 
+/* title of the page */
 .head_title{
     height: 118.08px;
     display: flex;
@@ -116,6 +127,7 @@ p{
 }
 
 
+/* book ticket | pnr status | charts/vaccancy buttons */
 .sub_button{
     display: flex;
     justify-content: space-between;
@@ -142,6 +154,7 @@ p{
 }
 
 
+/* train search bar */
 .search_train__first{
     display: flex;
     justify-content: space-around;
@@ -170,6 +183,17 @@ p{
 }
 
 
+/* setting up size and margins for both search boxes */
+.search_train__first, .search_train__second{
+    height: 116.6px;
+    border: 1.01px solid #3333331A;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* search bar for date | class | tatkal */
 .search_train__second{
     display: flex;
     justify-content: space-around;
@@ -182,6 +206,8 @@ p{
     display: flex;
 }
 
+
+/* search train button */
 .last_button{
     width: 618.47px;
     height: 81.11px;
@@ -199,14 +225,6 @@ p{
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-}
-
-.search_train__first, .search_train__second{
-    height: 116.6px;
-    border: 1.01px solid #3333331A;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 
